@@ -15,6 +15,13 @@
 </head>
 <body>
 
+  <!-- Fixed Bright Sky & Clouds Photographic Background Layer (Bright Plane & Daylight Cumulus) -->
+  <div class="sky-clouds-viewport-bg" id="sky-clouds-viewport-bg" aria-hidden="true">
+    <div class="sky-clouds-photo" id="sky-clouds-photo"></div>
+    <div class="sky-clouds-overlay"></div>
+    <div class="sky-clouds-daylight-glow"></div>
+  </div>
+
   <!-- Sticky Header Navigation -->
   <header class="site-header" id="site-header">
     <div class="container">
@@ -419,28 +426,58 @@
         </div>
       </div>
 
+      <!-- Cloud Section Divider (Variant 1: Daylight Cumulus Clouds) -->
+      <div class="cloud-section-divider cloud-divider-var-1" aria-hidden="true">
+        <div class="cloud-divider-photo"></div>
+        <div class="cloud-divider-fade"></div>
+      </div>
+
       <!-- Popular Destinations Section -->
       <div class="container section-padding">
         <div class="section-header">
           <div>
             <span class="section-tag">Explore Top Routes</span>
-            <h2 class="section-title">Popular Destinations</h2>
+            <h2 class="section-title">
+              <svg class="section-title-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Popular Destinations</span>
+            </h2>
             <p class="section-subtitle">Click any destination to pre-fill your flight search instantly.</p>
           </div>
         </div>
         <div class="destinations-grid" id="popular-destinations-grid"></div>
       </div>
 
+      <!-- Cloud Section Divider (Variant 2: Soft White Airy Horizon Clouds) -->
+      <div class="cloud-section-divider cloud-divider-var-2" aria-hidden="true">
+        <div class="cloud-divider-photo"></div>
+        <div class="cloud-divider-fade"></div>
+      </div>
+
       <!-- Sample Flight Deals Section -->
-      <div class="container section-padding" style="background: white; border-radius: var(--radius-xl); margin-bottom: 56px; border: 1px solid var(--border-light); padding: 40px 32px;">
+      <div class="container section-padding deals-showcase-panel">
         <div class="section-header">
           <div>
             <span class="section-tag">Limited Time Offers</span>
-            <h2 class="section-title">Sample Flight Deals</h2>
+            <h2 class="section-title">
+              <svg class="section-title-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                <line x1="7" y1="7" x2="7.01" y2="7"/>
+              </svg>
+              <span>Sample Flight Deals</span>
+            </h2>
             <p class="section-subtitle">Direct connections with verified demo airfares and carry-on included.</p>
           </div>
         </div>
         <div class="deals-grid" id="flight-deals-grid"></div>
+      </div>
+
+      <!-- Cloud Section Divider (Variant 3: Aerial Daylight Cloudscape) -->
+      <div class="cloud-section-divider cloud-divider-var-3" aria-hidden="true">
+        <div class="cloud-divider-photo"></div>
+        <div class="cloud-divider-fade"></div>
       </div>
 
       <!-- Benefit Cards Section -->
@@ -1053,7 +1090,7 @@
                     <div style="font-size:12px; font-weight:700; color:var(--text-muted); text-transform:uppercase;">Available AirAsia Points</div>
                     <div style="font-size:24px; font-weight:800; color:#D97706; margin-top:2px;">★ 48,500 Points</div>
                   </div>
-                  <span class="status-badge" style="background:#FEF3C7; color:#B45309;">Gold Member</span>
+                  <span class="status-badge" style="background: rgba(245, 158, 11, 0.25); border: 1px solid rgba(251, 191, 36, 0.4); color: #FDE68A;">Gold Member</span>
                 </div>
                 <p style="font-size:13px; color:var(--text-muted); margin-top:10px; line-height: 1.5;">
                   100 Points = 100 BDT value. Your flight booking will be paid instantly using your simulated AirAsia rewards balance with zero transaction fees.
@@ -1094,7 +1131,7 @@
       <div class="container">
         <div class="confirmation-container">
           <div class="confirmation-header">
-            <div style="display:inline-flex; width:52px; height:52px; border-radius:50%; background:white; color:#059669; align-items:center; justify-content:center; margin-bottom:12px;">
+            <div style="display:inline-flex; width:54px; height:54px; border-radius:50%; background:rgba(255, 255, 255, 0.22); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(255, 255, 255, 0.4); color:white; align-items:center; justify-content:center; margin-bottom:12px; box-shadow:0 4px 12px rgba(0, 0, 0, 0.2);">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
@@ -1193,6 +1230,10 @@
                   <option value="Bangkok">Bangkok, Thailand</option>
                   <option value="Singapore">Singapore</option>
                   <option value="Bali">Bali, Indonesia</option>
+                  <option value="Phuket">Phuket, Thailand</option>
+                  <option value="Penang">Penang, Malaysia</option>
+                  <option value="Langkawi">Langkawi, Malaysia</option>
+                  <option value="Tokyo">Tokyo, Japan</option>
                   <option value="Jakarta">Jakarta, Indonesia</option>
                   <option value="Dhaka">Dhaka, Bangladesh</option>
                   <option value="All">Show All Destinations</option>
@@ -1239,6 +1280,12 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Cloud Section Divider (Variant 4: Dreamy Daylight Horizon) -->
+      <div class="cloud-section-divider cloud-divider-var-4" aria-hidden="true">
+        <div class="cloud-divider-photo"></div>
+        <div class="cloud-divider-fade"></div>
       </div>
 
       <!-- Hotel Results Layout -->
@@ -1303,8 +1350,8 @@
     <section class="app-view" id="view-hotel-confirmation" style="display: none;">
       <div class="container">
         <div class="confirmation-container">
-          <div class="confirmation-header" style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);">
-            <div style="display:inline-flex; width:52px; height:52px; border-radius:50%; background:white; color:#2563EB; align-items:center; justify-content:center; margin-bottom:12px;">
+          <div class="confirmation-header" style="background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(29, 78, 216, 0.9) 100%);">
+            <div style="display:inline-flex; width:54px; height:54px; border-radius:50%; background:rgba(255, 255, 255, 0.22); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid rgba(255, 255, 255, 0.4); color:white; align-items:center; justify-content:center; margin-bottom:12px; box-shadow:0 4px 12px rgba(0, 0, 0, 0.2);">
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
                 <polyline points="20 6 9 17 4 12"/>
               </svg>
@@ -1385,7 +1432,7 @@
               </button>
             </div>
 
-            <button type="button" class="btn-outline" id="btn-clear-all-data" title="Clear localStorage demo data" style="padding: 9px 16px; font-size:13px; font-weight:700; color:var(--danger); border-color:#FECACA; background:white; cursor:pointer; display:inline-flex; align-items:center; gap:6px; border-radius:var(--radius-full);">
+            <button type="button" class="btn-clear-demo-data" id="btn-clear-all-data" title="Clear localStorage demo data">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="3 6 5 6 21 6"/>
                 <path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
@@ -1408,7 +1455,7 @@
       <div class="container section-padding">
         <!-- Hero Image -->
         <div class="about-hero">
-          <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80" alt="Travel airplane" />
+          <img src="https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&w=2400&q=85" alt="Commercial airplane at modern international airport at blue hour" referrerpolicy="no-referrer" onerror="this.src='https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=2400&q=85'" />
           <div class="about-hero-overlay">
             <span class="section-tag" style="color:#FECACA;">Educational Project</span>
             <h1 style="font-size: 34px; font-weight: 800; line-height: 1.2;">AirAsia Frontend Booking Experience</h1>
@@ -1416,6 +1463,12 @@
               A responsive, modern frontend-only web application demonstrating flight and hotel reservations with local mock data.
             </p>
           </div>
+        </div>
+
+        <!-- Cloud Section Divider (Variant 1: Sunlit Cumulus Horizon) -->
+        <div class="cloud-section-divider cloud-divider-var-1" aria-hidden="true">
+          <div class="cloud-divider-photo"></div>
+          <div class="cloud-divider-fade"></div>
         </div>
 
         <!-- Features Grid -->
@@ -1707,7 +1760,7 @@
         </div>
 
         <!-- Stay Details Meta -->
-        <div style="background:var(--bg-subtle); padding:12px 16px; border-radius:var(--radius-md); font-size:14px; font-weight:600; color:var(--text-main);">
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); padding:12px 16px; border-radius:var(--radius-md); font-size:14px; font-weight:600; color:var(--text-main);">
           Stay Dates: <span id="modal-stay-meta" style="color:var(--primary); font-weight:700;"></span>
         </div>
 
@@ -1788,32 +1841,32 @@
         </svg>
       </button>
       <div style="padding: 24px; text-align: center;">
-        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FDF2F8; color: #E2136E; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; border: 2px solid #FCE7F3;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(226, 19, 110, 0.2); color: #F43F5E; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; border: 1px solid rgba(244, 63, 94, 0.4); box-shadow: 0 4px 14px rgba(226, 19, 110, 0.3);">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <polygon points="5 3 19 12 5 21 5 3"/>
           </svg>
         </div>
-        <h3 style="font-size: 20px; font-weight: 800; color: var(--dark);">Confirm bKash Payment</h3>
+        <h3 style="font-size: 20px; font-weight: 800; color: #F8FAFC;">Confirm bKash Payment</h3>
         <p style="font-size: 14px; color: var(--text-muted); margin-top: 6px;">
           Please review and confirm your bKash payment authorization before processing.
         </p>
 
-        <div style="background: #F8FAFC; border: 1px solid var(--border-light); border-radius: 12px; padding: 14px 16px; margin-top: 16px; text-align: left;">
+        <div style="background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 12px; padding: 14px 16px; margin-top: 16px; text-align: left; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);">
           <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
             <span style="color: var(--text-muted);">Merchant</span>
-            <span style="font-weight: 700; color: var(--dark);">AirAsia Bangladesh</span>
+            <span style="font-weight: 700; color: #F8FAFC;">AirAsia Bangladesh</span>
           </div>
           <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
             <span style="color: var(--text-muted);">bKash Account</span>
-            <span style="font-weight: 700; color: var(--dark);" id="bkash-confirm-account-num">+880 01712-345678</span>
+            <span style="font-weight: 700; color: #F8FAFC;" id="bkash-confirm-account-num">+880 01712-345678</span>
           </div>
           <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
             <span style="color: var(--text-muted);">Booking Type</span>
-            <span style="font-weight: 700; color: var(--dark);">AirAsia Flight Ticket</span>
+            <span style="font-weight: 700; color: #F8FAFC;">AirAsia Flight Ticket</span>
           </div>
-          <div style="display: flex; justify-content: space-between; font-size: 15px; border-top: 1px dashed var(--border-light); padding-top: 8px; margin-top: 4px;">
-            <span style="font-weight: 800; color: var(--dark);">Amount to Deduct</span>
-            <span style="font-weight: 800; color: #E2136E;" id="bkash-confirm-amount-display">BDT 0</span>
+          <div style="display: flex; justify-content: space-between; font-size: 15px; border-top: 1px dashed rgba(255, 255, 255, 0.12); padding-top: 8px; margin-top: 4px;">
+            <span style="font-weight: 800; color: #F8FAFC;">Amount to Deduct</span>
+            <span style="font-weight: 800; color: #FF4D4F;" id="bkash-confirm-amount-display">BDT 0</span>
           </div>
         </div>
 
@@ -1839,16 +1892,16 @@
         </svg>
       </button>
       <div style="padding: 24px; text-align: center;">
-        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FEE2E2; color: #DC2626; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; border: 2px solid #FCA5A5;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: rgba(239, 68, 68, 0.2); color: #F87171; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; border: 1px solid rgba(248, 113, 113, 0.4); box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <circle cx="12" cy="12" r="10"></circle>
             <line x1="15" y1="9" x2="9" y2="15"></line>
             <line x1="9" y1="9" x2="15" y2="15"></line>
           </svg>
         </div>
-        <h3 style="font-size: 20px; font-weight: 800; color: var(--dark);">Cancel Booking?</h3>
+        <h3 style="font-size: 20px; font-weight: 800; color: #F8FAFC;">Cancel Booking?</h3>
         <p style="font-size: 14px; color: var(--text-muted); margin-top: 8px; line-height: 1.5;">
-          Are you sure you want to cancel booking <strong id="cancel-modal-booking-id" style="color: var(--dark);"></strong>? Its status will be updated to Cancelled.
+          Are you sure you want to cancel booking <strong id="cancel-modal-booking-id" style="color: #F8FAFC;"></strong>? Its status will be updated to Cancelled.
         </p>
         <div style="display: flex; gap: 10px; margin-top: 22px;">
           <button type="button" class="btn-outline" id="btn-abort-cancel-booking" style="flex: 1;">Keep Booking</button>
@@ -1870,13 +1923,13 @@
         </svg>
       </button>
       <div style="padding: 24px; text-align: center;">
-        <div style="width: 48px; height: 48px; border-radius: 50%; background: #FEE2E2; color: #DC2626; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(239, 68, 68, 0.2); color: #F87171; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 12px; border: 1px solid rgba(248, 113, 113, 0.4); box-shadow: 0 4px 14px rgba(220, 38, 38, 0.3);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="3 6 5 6 21 6"/>
             <path d="M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
           </svg>
         </div>
-        <h3 style="font-size: 19px; font-weight: 800; color: var(--dark);">Clear All Stored Data?</h3>
+        <h3 style="font-size: 19px; font-weight: 800; color: #F8FAFC;">Clear All Stored Data?</h3>
         <p style="font-size: 14px; color: var(--text-muted); margin-top: 8px; line-height: 1.5;">
           This will permanently remove all previous flight bookings, hotel reservations, saved passenger profiles, and user preferences stored in your browser's localStorage.
         </p>
@@ -1890,6 +1943,12 @@
 
   <!-- Toast Notification Container -->
   <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- Cloud Transition Divider Before Footer -->
+  <div class="cloud-section-divider cloud-divider-var-2" aria-hidden="true" style="margin-bottom: -30px; position: relative; z-index: 2;">
+    <div class="cloud-divider-photo"></div>
+    <div class="cloud-divider-fade"></div>
+  </div>
 
   <!-- Footer -->
   <footer class="site-footer">

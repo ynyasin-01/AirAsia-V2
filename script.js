@@ -66,7 +66,7 @@
       city: 'Dhaka',
       country: 'Bangladesh',
       price: 21900,
-      image: 'https://images.unsplash.com/photo-1608889825205-eebdb9fc5806?auto=format&fit=crop&w=600&q=80',
+      image: 'https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=85',
       tag: 'Hub City'
     }
   ];
@@ -79,6 +79,7 @@
   ];
 
   const HOTELS_DATA = [
+    // Kuala Lumpur
     {
       id: 'ht-1',
       name: 'Grand Pacific Suites & Spa',
@@ -103,6 +104,74 @@
     },
     {
       id: 'ht-2',
+      name: 'AirAsia Tune Hotel KLIA2',
+      city: 'Kuala Lumpur',
+      country: 'Malaysia',
+      rating: 4.6,
+      reviewsCount: 1420,
+      pricePerNight: 5800,
+      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Airport Shuttle', 'Breakfast Included', 'Fitness Center', 'Luggage Storage'],
+      description: 'Convenient airport transit hotel seamlessly linked to KLIA Terminal 2 via a covered bridge, featuring 5-star beds and power showers.',
+      rooms: [
+        { type: 'Transit Double Ensuite', maxGuests: 2, priceBonus: 0, bed: '1 Queen Bed' },
+        { type: 'Twin Transit Room', maxGuests: 2, priceBonus: 600, bed: '2 Single Beds' },
+        { type: 'Family Transit Quad', maxGuests: 4, priceBonus: 4000, bed: '2 Queen Beds' }
+      ]
+    },
+    {
+      id: 'ht-3',
+      name: 'EQ Kuala Lumpur & Sky Bar',
+      city: 'Kuala Lumpur',
+      country: 'Malaysia',
+      rating: 4.9,
+      reviewsCount: 2840,
+      pricePerNight: 16500,
+      image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Spa & Wellness'],
+      description: 'Iconic 5-star architectural landmark with an infinity sky pool and panoramic views over the Petronas Twin Towers.',
+      rooms: [
+        { type: 'Deluxe King City View', maxGuests: 2, priceBonus: 0, bed: '1 Super King Bed' },
+        { type: 'Club Twin Towers View', maxGuests: 2, priceBonus: 4500, bed: '2 Double Beds' },
+        { type: 'Executive Skyline Suite', maxGuests: 3, priceBonus: 9500, bed: '1 King Bed + Living Area' }
+      ]
+    },
+    {
+      id: 'ht-4',
+      name: 'The Chow Kit Ormond Heritage',
+      city: 'Kuala Lumpur',
+      country: 'Malaysia',
+      rating: 4.7,
+      reviewsCount: 920,
+      pricePerNight: 8200,
+      image: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Breakfast Included', 'Airport Shuttle', 'Boutique Kitchen', 'Cocktail Lounge'],
+      description: 'Boutique design haven blending vintage mid-century Malaysian aesthetics with bespoke guest luxury in the cultural heart of KL.',
+      rooms: [
+        { type: 'The Den King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'The Clifford Twin', maxGuests: 2, priceBonus: 1200, bed: '2 Single Beds' },
+        { type: 'Towkay Executive Suite', maxGuests: 3, priceBonus: 4500, bed: '1 King Bed + Living Lounge' }
+      ]
+    },
+
+    // Bangkok
+    {
+      id: 'ht-5',
       name: 'Chao Phraya Riverside Resort',
       city: 'Bangkok',
       country: 'Thailand',
@@ -116,7 +185,7 @@
         'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80'
       ],
       amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Spa & Wellness', 'Water Taxi'],
-      description: 'Tranquil riverside sanctuary located along the banks of Chao Phraya. Includes free shuttle boat service to BTS Skytrain and night markets.',
+      description: 'Tranquil riverside sanctuary along the Chao Phraya with complimentary private water shuttle to BTS Skytrain and night markets.',
       rooms: [
         { type: 'Superior Riverview', maxGuests: 2, priceBonus: 0, bed: '1 Double Bed' },
         { type: 'Deluxe Balcony Suite', maxGuests: 3, priceBonus: 1800, bed: '1 King Bed' },
@@ -124,7 +193,53 @@
       ]
     },
     {
-      id: 'ht-3',
+      id: 'ht-6',
+      name: 'Banyan Tree Bangkok Sky Sanctuary',
+      city: 'Bangkok',
+      country: 'Thailand',
+      rating: 4.8,
+      reviewsCount: 1650,
+      pricePerNight: 14800,
+      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Breakfast Included', 'Spa & Wellness'],
+      description: 'Legendary urban resort situated on Sathon Road featuring the Vertigo open-air rooftop grill and award-winning holistic spa suites.',
+      rooms: [
+        { type: 'Horizon King Suite', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Oasis Club Retreat', maxGuests: 2, priceBonus: 3200, bed: '1 King Bed' },
+        { type: 'Two-Bedroom Presidential Suite', maxGuests: 4, priceBonus: 8800, bed: '2 King Beds' }
+      ]
+    },
+    {
+      id: 'ht-7',
+      name: 'Sukhumvit Sky Oasis Suites',
+      city: 'Bangkok',
+      country: 'Thailand',
+      rating: 4.6,
+      reviewsCount: 880,
+      pricePerNight: 8900,
+      image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Fitness Center', 'Airport Shuttle'],
+      description: 'Vibrant modern high-rise in central Sukhumvit with direct BTS skybridge link, rooftop saltwater infinity pool, and Japanese dining.',
+      rooms: [
+        { type: 'Premier King Studio', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Executive Corner Suite', maxGuests: 3, priceBonus: 2400, bed: '1 King Bed + Daybed' },
+        { type: 'Sky Penthouse Suite', maxGuests: 4, priceBonus: 6500, bed: '2 King Beds' }
+      ]
+    },
+
+    // Singapore
+    {
+      id: 'ht-8',
       name: 'Marina Vista Bay Hotel',
       city: 'Singapore',
       country: 'Singapore',
@@ -137,8 +252,8 @@
         'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80'
       ],
-      amenities: ['Free Wi-Fi', 'Rooftop Pool', 'Airport Shuttle', 'Fine Dining', 'Gym'],
-      description: 'Sophisticated modern hotel steps from Gardens by the Bay and MRT stations. High-floor observation deck with panoramic city harbor vistas.',
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Breakfast Included', 'Fitness Center'],
+      description: 'Sophisticated modern hotel steps from Gardens by the Bay and MRT stations with a high-floor observation deck and harbor vistas.',
       rooms: [
         { type: 'City View Deluxe', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
         { type: 'Harbor Premier Room', maxGuests: 2, priceBonus: 3500, bed: '1 King Bed' },
@@ -146,7 +261,53 @@
       ]
     },
     {
-      id: 'ht-4',
+      id: 'ht-9',
+      name: 'The Fullerton Heritage Bay',
+      city: 'Singapore',
+      country: 'Singapore',
+      rating: 4.9,
+      reviewsCount: 3120,
+      pricePerNight: 24500,
+      image: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Heritage Spa'],
+      description: 'Grand neo-classical monument overlooking Marina Bay waters, delivering world-renowned 5-star service and waterfront culinary journeys.',
+      rooms: [
+        { type: 'Courtyard Heritage King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Marina Bay Water View', maxGuests: 2, priceBonus: 4800, bed: '1 King Bed' },
+        { type: 'Governor Presidential Suite', maxGuests: 4, priceBonus: 14000, bed: '1 King + 2 Doubles' }
+      ]
+    },
+    {
+      id: 'ht-10',
+      name: 'Sentosa Cove Beachfront Resort',
+      city: 'Singapore',
+      country: 'Singapore',
+      rating: 4.8,
+      reviewsCount: 1420,
+      pricePerNight: 19800,
+      image: 'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Beach Access'],
+      description: 'Exclusive island sanctuary with sandy lagoon access, lush tropical gardens, and direct marina yacht berths on Sentosa Island.',
+      rooms: [
+        { type: 'Ocean Lagoon King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Beachfront Pool Villa', maxGuests: 3, priceBonus: 5200, bed: '1 King Canopy Bed' },
+        { type: 'Sentosa Family Bungalow', maxGuests: 4, priceBonus: 10500, bed: '2 King Beds' }
+      ]
+    },
+
+    // Bali
+    {
+      id: 'ht-11',
       name: 'Ubud Seminyak Haven Villa',
       city: 'Bali',
       country: 'Indonesia',
@@ -159,8 +320,8 @@
         'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80'
       ],
-      amenities: ['Free Wi-Fi', 'Private Pool', 'Breakfast Included', 'Airport Shuttle', 'Spa Services'],
-      description: 'Authentic Balinese private villa immersed in lush gardens with private plunge pool, open-air pavilion, and organic morning breakfast.',
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Spa & Wellness'],
+      description: 'Authentic Balinese private villa immersed in lush gardens with plunge pool, open-air living pavilion, and organic morning breakfast.',
       rooms: [
         { type: 'Private Pool Villa', maxGuests: 2, priceBonus: 0, bed: '1 King Canopy Bed' },
         { type: 'Two-Bedroom Garden Sanctuary', maxGuests: 4, priceBonus: 5000, bed: '2 King Beds' },
@@ -168,7 +329,237 @@
       ]
     },
     {
-      id: 'ht-5',
+      id: 'ht-12',
+      name: 'Nusa Dua Tropical Cliff & Lagoon',
+      city: 'Bali',
+      country: 'Indonesia',
+      rating: 4.9,
+      reviewsCount: 2150,
+      pricePerNight: 15400,
+      image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Breakfast Included', 'Private Beach'],
+      description: 'Spectacular cliff-edge oceanfront resort with tiered crystal swimming lagoons, private white-sand beach cove, and fire dancing shows.',
+      rooms: [
+        { type: 'Cliff Ocean King Suite', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Lagoon Access Villa', maxGuests: 2, priceBonus: 4000, bed: '1 King Bed' },
+        { type: 'Royal Cliffside Residence', maxGuests: 4, priceBonus: 11000, bed: '2 King Suites' }
+      ]
+    },
+    {
+      id: 'ht-13',
+      name: 'Canggu Surfside Eco Resort',
+      city: 'Bali',
+      country: 'Indonesia',
+      rating: 4.7,
+      reviewsCount: 1180,
+      pricePerNight: 7600,
+      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Yoga Pavilion'],
+      description: 'Bohemian eco-chic resort steps from Echo Beach surfing breaks, with organic garden cafe, daily yoga, and bamboo architecture.',
+      rooms: [
+        { type: 'Eco Garden King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Surfside Balcony Loft', maxGuests: 2, priceBonus: 1800, bed: '1 Queen Bed' },
+        { type: 'Bamboo Family Sanctuary', maxGuests: 4, priceBonus: 4600, bed: '2 Double Beds' }
+      ]
+    },
+
+    // Phuket
+    {
+      id: 'ht-14',
+      name: 'Kata Rocks Oceanfront Villas',
+      city: 'Phuket',
+      country: 'Thailand',
+      rating: 4.9,
+      reviewsCount: 1740,
+      pricePerNight: 21000,
+      image: 'https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1549294413-26f195200c16?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Breakfast Included', 'Ocean Sunset Bar'],
+      description: 'Super-luxury modern yacht-styled residences perched over the Andaman Sea with private infinity plunge pools and panoramic sunsets.',
+      rooms: [
+        { type: 'One-Bedroom Sky Villa', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Two-Bedroom Ocean Residence', maxGuests: 4, priceBonus: 7500, bed: '2 King Beds' },
+        { type: 'Three-Bedroom Penthouse', maxGuests: 6, priceBonus: 16000, bed: '3 King Beds' }
+      ]
+    },
+    {
+      id: 'ht-15',
+      name: 'Patong Bay Tropical Lagoon Resort',
+      city: 'Phuket',
+      country: 'Thailand',
+      rating: 4.6,
+      reviewsCount: 2210,
+      pricePerNight: 6800,
+      image: 'https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Beach Shuttle'],
+      description: 'Lively beachfront resort featuring free-form lagoon pools with swim-up cocktail bars, lush palms, and evening beach BBQs.',
+      rooms: [
+        { type: 'Deluxe Pool View Room', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Pool Access Double', maxGuests: 2, priceBonus: 1600, bed: '1 King Bed' },
+        { type: 'Family Lagoon Suite', maxGuests: 4, priceBonus: 3800, bed: '2 Queen Beds' }
+      ]
+    },
+
+    // Penang
+    {
+      id: 'ht-16',
+      name: 'Eastern & Oriental Heritage Hotel',
+      city: 'Penang',
+      country: 'Malaysia',
+      rating: 4.9,
+      reviewsCount: 2980,
+      pricePerNight: 15200,
+      image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Heritage Gardens'],
+      description: 'The pearl of George Town, this colonial grand dame has hosted royalty and literary icons along Penang’s sea wall since 1885.',
+      rooms: [
+        { type: 'Heritage Deluxe Suite', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Straits Seafront Suite', maxGuests: 2, priceBonus: 3800, bed: '1 Four-poster King' },
+        { type: 'Writers Presidential Suite', maxGuests: 4, priceBonus: 9200, bed: '2 King Suites' }
+      ]
+    },
+    {
+      id: 'ht-17',
+      name: 'Batu Ferringhi Beachfront Escape',
+      city: 'Penang',
+      country: 'Malaysia',
+      rating: 4.6,
+      reviewsCount: 1410,
+      pricePerNight: 7400,
+      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Watersports Center'],
+      description: 'Family beach haven right on Batu Ferringhi sands with water sports, night market access, and sunset seafood barbecues.',
+      rooms: [
+        { type: 'Superior Sea Facing Room', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Deluxe Terrace Room', maxGuests: 3, priceBonus: 1500, bed: '1 King + Sofa Bed' },
+        { type: 'Penang Family Suite', maxGuests: 4, priceBonus: 4000, bed: '2 Queen Beds' }
+      ]
+    },
+
+    // Langkawi
+    {
+      id: 'ht-18',
+      name: 'The Andaman Rainforest & Coral Sanctuary',
+      city: 'Langkawi',
+      country: 'Malaysia',
+      rating: 4.8,
+      reviewsCount: 1820,
+      pricePerNight: 16800,
+      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Nature Treks'],
+      description: 'Nestled between a 10-million-year-old ancient rainforest and the white sands of Datai Bay, home to coral nurseries and monkeys.',
+      rooms: [
+        { type: 'Rainforest Deluxe King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Seaview Canopy Suite', maxGuests: 2, priceBonus: 4200, bed: '1 King Canopy Bed' },
+        { type: 'Executive Beach Villa', maxGuests: 4, priceBonus: 11000, bed: '2 King Beds' }
+      ]
+    },
+    {
+      id: 'ht-19',
+      name: 'Pantai Cenang Sunset Beach Club',
+      city: 'Langkawi',
+      country: 'Malaysia',
+      rating: 4.6,
+      reviewsCount: 1280,
+      pricePerNight: 6400,
+      image: 'https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1561501900-3701fa6a0864?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Beachfront Lounge'],
+      description: 'Lively and casual beachfront resort right on Cenang Beach strip with sunset fire performances and tax-free shopping walks.',
+      rooms: [
+        { type: 'Cenang Beachfront King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Poolside Verandah Double', maxGuests: 2, priceBonus: 1200, bed: '1 King Bed' },
+        { type: 'Island Family Bungalow', maxGuests: 4, priceBonus: 3200, bed: '2 Queen Beds' }
+      ]
+    },
+
+    // Tokyo
+    {
+      id: 'ht-20',
+      name: 'Cerulean Tower Panoramic View Hotel',
+      city: 'Tokyo',
+      country: 'Japan',
+      rating: 4.8,
+      reviewsCount: 2450,
+      pricePerNight: 23500,
+      image: 'https://images.unsplash.com/photo-1506059612708-99d6c258160e?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1506059612708-99d6c258160e?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Fuji Mountain Views'],
+      description: 'High above Shibuya crossing, this prestigious 40-story tower offers Mt. Fuji vistas, traditional Noh theatre, and jazz bar.',
+      rooms: [
+        { type: 'Superior High Floor King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Corner Shibuya View Suite', maxGuests: 2, priceBonus: 5800, bed: '1 King Bed' },
+        { type: 'Cerulean Executive Suite', maxGuests: 3, priceBonus: 12500, bed: '1 King + Tatami Lounge' }
+      ]
+    },
+    {
+      id: 'ht-21',
+      name: 'Shinjuku Prince Sky Hotel',
+      city: 'Tokyo',
+      country: 'Japan',
+      rating: 4.6,
+      reviewsCount: 3100,
+      pricePerNight: 14200,
+      image: 'https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Airport Shuttle', 'Breakfast Included', 'Direct Subway Link', 'Luggage Storage'],
+      description: 'Directly above Seibu-Shinjuku Station with seamless access to Narita Express, Golden Gai nightlife, and Omoide Yokocho dining.',
+      rooms: [
+        { type: 'Standard Double City View', maxGuests: 2, priceBonus: 0, bed: '1 Double Bed' },
+        { type: 'Deluxe Twin High Floor', maxGuests: 2, priceBonus: 2200, bed: '2 Single Beds' },
+        { type: 'Family Connected Rooms', maxGuests: 4, priceBonus: 6800, bed: '2 Double Beds' }
+      ]
+    },
+
+    // Jakarta
+    {
+      id: 'ht-22',
       name: 'The Pan Pacific Jakarta Central',
       city: 'Jakarta',
       country: 'Indonesia',
@@ -180,8 +571,8 @@
         'https://images.unsplash.com/photo-1568495248636-6432b97bd949?auto=format&fit=crop&w=800&q=80',
         'https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=800&q=80'
       ],
-      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Business Center', 'Buffet Breakfast'],
-      description: 'Contemporary high-rise hotel in the golden triangle district of Thamrin, offering direct connectivity to premier shopping centers and embassy row.',
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Fitness Center', 'Breakfast Included'],
+      description: 'Contemporary high-rise hotel in the golden triangle district of Thamrin, offering direct connectivity to premier shopping centers.',
       rooms: [
         { type: 'Deluxe City View', maxGuests: 2, priceBonus: 0, bed: '1 King or 2 Single Beds' },
         { type: 'Club Premier Room', maxGuests: 3, priceBonus: 2000, bed: '1 King Bed' },
@@ -189,7 +580,30 @@
       ]
     },
     {
-      id: 'ht-6',
+      id: 'ht-23',
+      name: 'SCBD Grand Jakarta Penthouse Hotel',
+      city: 'Jakarta',
+      country: 'Indonesia',
+      rating: 4.8,
+      reviewsCount: 1140,
+      pricePerNight: 12500,
+      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Breakfast Included', 'Spa & Wellness'],
+      description: 'Located in Jakarta’s prestigious Sudirman Central Business District with direct access to luxury boutiques, rooftop dining, and MRT.',
+      rooms: [
+        { type: 'SCBD Deluxe King', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Premier Executive Club', maxGuests: 2, priceBonus: 2800, bed: '1 King Bed' },
+        { type: 'Sky Penthouse 2-Bedroom', maxGuests: 4, priceBonus: 7800, bed: '2 King Beds' }
+      ]
+    },
+
+    // Dhaka
+    {
+      id: 'ht-24',
       name: 'Rosewood Crown Airport Residency',
       city: 'Dhaka',
       country: 'Bangladesh',
@@ -202,11 +616,55 @@
         'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80'
       ],
       amenities: ['Free Wi-Fi', 'Airport Shuttle', 'Breakfast Included', '24h Room Service', 'Fitness Center'],
-      description: 'Convenient 4-star transit and business sanctuary located only 8 minutes from Hazrat Shahjalal International Airport, featuring soundproofed rooms and 24/7 dining.',
+      description: 'Convenient 4-star transit and business sanctuary located only 8 minutes from Hazrat Shahjalal International Airport with 24/7 dining.',
       rooms: [
         { type: 'Standard Transit Queen', maxGuests: 2, priceBonus: 0, bed: '1 Queen Bed' },
         { type: 'Deluxe Executive King', maxGuests: 2, priceBonus: 1500, bed: '1 King Bed' },
         { type: 'Family Transit Suite', maxGuests: 4, priceBonus: 3500, bed: '2 Double Beds' }
+      ]
+    },
+    {
+      id: 'ht-25',
+      name: 'The Westin Dhaka Diplomatic Quarter',
+      city: 'Dhaka',
+      country: 'Bangladesh',
+      rating: 4.8,
+      reviewsCount: 2200,
+      pricePerNight: 18500,
+      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Airport Shuttle', 'Breakfast Included', 'Spa & Wellness'],
+      description: 'Premier 5-star luxury in Dhaka’s secure Gulshan diplomatic quarter featuring signature Heavenly Beds and international culinary stations.',
+      rooms: [
+        { type: 'Deluxe Heavenly King', maxGuests: 2, priceBonus: 0, bed: '1 King Heavenly Bed' },
+        { type: 'Club Floor Suite', maxGuests: 2, priceBonus: 3600, bed: '1 King Bed' },
+        { type: 'Presidential Diplomatic Suite', maxGuests: 4, priceBonus: 11500, bed: '2 King Suites' }
+      ]
+    },
+    {
+      id: 'ht-26',
+      name: 'InterContinental Dhaka Heritage & Green',
+      city: 'Dhaka',
+      country: 'Bangladesh',
+      rating: 4.8,
+      reviewsCount: 1950,
+      pricePerNight: 17800,
+      image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+      gallery: [
+        'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80'
+      ],
+      amenities: ['Free Wi-Fi', 'Swimming Pool', 'Breakfast Included', 'Airport Shuttle', 'Lush Gardens'],
+      description: 'Historic diplomatic address offering refined luxury, temperature-controlled pool, lush private parkland, and fine dining.',
+      rooms: [
+        { type: 'Classic King Garden View', maxGuests: 2, priceBonus: 0, bed: '1 King Bed' },
+        { type: 'Club InterContinental Room', maxGuests: 2, priceBonus: 3200, bed: '1 King Bed' },
+        { type: 'Executive Heritage Suite', maxGuests: 4, priceBonus: 9800, bed: '2 King Beds' }
       ]
     }
   ];
@@ -3817,8 +4275,8 @@
             </div>
             <span class="destination-country">${escapeHtml(item.country)}</span>
             <div class="destination-footer">
-              <span class="price-label">Fares from</span>
-              <span class="price-amount">${formatBDT(item.price)}</span>
+              <span class="price-label" style="color: rgba(255, 255, 255, 0.85) !important;">Fares from</span>
+              <span class="price-amount" style="color: #ffffff !important; font-weight: 800;">${formatBDT(item.price)}</span>
             </div>
           </div>
         `;
@@ -3853,8 +4311,8 @@
             <p>${escapeHtml(deal.desc)}</p>
           </div>
           <div class="deal-price">
-            <span style="font-size:11px; color:var(--text-muted); display:block;">One Way from</span>
-            <span class="deal-price-val">${formatBDT(deal.price)}</span>
+            <span style="font-size:11px; color:rgba(255, 255, 255, 0.88) !important; display:block; text-transform:uppercase; letter-spacing:0.4px; font-weight:600;">One Way from</span>
+            <span class="deal-price-val" style="color: #ffffff !important; font-weight: 800;">${formatBDT(deal.price)}</span>
           </div>
         `;
 
@@ -4027,6 +4485,89 @@
         if (e.target === overlay) overlay.classList.remove('open');
       });
     });
+
+    // Dynamic transition that shrinks header height when scrolling down and isolates nav panel
+    const siteHeader = document.getElementById('site-header');
+    let isHeaderScrolled = false;
+    let isScrollBlurTicking = false;
+
+    // Dynamic scroll-linked blur intensity and subtle parallax for sky background & cloud dividers
+    const updateScrollBlurIntensity = () => {
+      const scrollY = window.scrollY || window.pageYOffset || 0;
+      // Progress over first 700px of scrolling
+      const progress = Math.min(scrollY / 700, 1);
+      // Blur boost increases smoothly from 0px up to 10px
+      const blurBoost = (progress * 10).toFixed(1);
+      // Ambient backdrop blur increases from 0px up to 16px
+      const ambientBlur = (progress * 16).toFixed(1);
+      // Ambient backdrop opacity increases from 0 to 0.45
+      const ambientOpacity = (progress * 0.45).toFixed(2);
+      // Slight saturation boost for glass vibrancy
+      const saturateBoost = (1 + progress * 0.15).toFixed(2);
+
+      document.documentElement.style.setProperty('--scroll-blur-boost', `${blurBoost}px`);
+      document.documentElement.style.setProperty('--scroll-ambient-blur', `${ambientBlur}px`);
+      document.documentElement.style.setProperty('--scroll-ambient-opacity', ambientOpacity);
+      document.documentElement.style.setProperty('--scroll-saturate-boost', saturateBoost);
+
+      // Subtle slow parallax for the background plane & cloud photo
+      const skyPhoto = document.getElementById('sky-clouds-photo');
+      if (skyPhoto) {
+        skyPhoto.style.transform = `translate3d(0, ${(scrollY * 0.04).toFixed(1)}px, 0)`;
+      }
+
+      // Very subtle parallax on visible cloud section divider photos
+      const dividers = document.querySelectorAll('.cloud-divider-photo');
+      dividers.forEach(div => {
+        const rect = div.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const offset = (rect.top - window.innerHeight / 2) * 0.05;
+          div.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0)`;
+        }
+      });
+
+      isScrollBlurTicking = false;
+    };
+
+    const handleWindowScroll = () => {
+      if (siteHeader) {
+        const scrolled = window.scrollY > 20;
+        if (scrolled !== isHeaderScrolled) {
+          isHeaderScrolled = scrolled;
+          siteHeader.classList.toggle('scrolled', isHeaderScrolled);
+
+          // Close open dropdowns if user starts scrolling down
+          if (scrolled) {
+            const currencyWrap = document.getElementById('currency-dropdown-wrap');
+            if (currencyWrap && currencyWrap.classList.contains('open')) {
+              currencyWrap.classList.remove('open');
+              const cBtn = document.getElementById('currency-selector-btn');
+              if (cBtn) cBtn.setAttribute('aria-expanded', 'false');
+            }
+            const userDropdown = document.getElementById('header-user-dropdown');
+            if (userDropdown && userDropdown.classList.contains('open')) {
+              userDropdown.classList.remove('open');
+              const uBtn = document.getElementById('header-user-btn');
+              if (uBtn) uBtn.setAttribute('aria-expanded', 'false');
+            }
+          }
+
+          // Smoothly track sliding pill during and after layout transition
+          requestAnimationFrame(updateNavSlidingPill);
+          [50, 120, 220, 350, 500, 650, 800].forEach(delay => {
+            setTimeout(updateNavSlidingPill, delay);
+          });
+        }
+      }
+
+      if (!isScrollBlurTicking) {
+        requestAnimationFrame(updateScrollBlurIntensity);
+        isScrollBlurTicking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleWindowScroll, { passive: true });
+    handleWindowScroll();
 
     // Dynamic current year in footer
     const yearEl = document.getElementById('current-year');
